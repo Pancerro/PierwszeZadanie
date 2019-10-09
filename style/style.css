@@ -1,0 +1,143 @@
+body
+{
+  margin:0;
+  padding:0;
+}
+div.pojemnik
+{
+	height:100vh;
+	margin: auto;
+	color: white;
+}
+header {  /* Naglowek */
+	background-color: red;
+}
+nav {  /* Menu nawigacyjne */
+	background-color: pink;
+	height: 50px;
+}
+aside { /* Menu boczne */
+	background-color: orange;
+    width: 25%;
+	height:calc(100vh - 180px);
+    float: left;
+	overflow:hidden;
+}
+main {  /* Tresc strony */
+	background-color: blue;
+    width: 75%;
+	height:calc(100vh - 180px);
+    float: right;
+	overflow:hidden;
+}
+section {
+	background-color: black;
+}
+article {
+	background-color: purple;
+}
+footer {  /* stopka */
+	background-color: green;
+	clear:both;
+}
+h1{
+  margin:0;
+  padding:15px;
+}
+h2{
+  margin:0;
+  padding:15px;
+}
+h3{
+  margin:0;
+  padding:15px;
+}
+h4{
+  margin:0;
+  padding:15px;
+}
+h5{
+  margin:0;
+  padding:15px;
+}
+p{
+  margin:0;
+  padding:15px;
+  color:white;
+  font-family: "Times New Roman", Times, serif;
+  text-align:center;
+  letter-spacing:5px;
+}
+a{
+	color:white;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: red;
+}
+blockquote{
+	font-style: italic;
+}
+iframe{
+	float:right;
+	width:800px;
+	height:500px;
+}
+#tabela {
+	margin: auto;
+	border: 1cm solid black;
+    border-collapse: collapse;
+	background-color:gray;
+}
+#tabela td {
+	border: 1px solid black;
+}
+#naglowek {
+	float:right;
+}
+.display_block
+{
+  color:white;
+}
+.display_block 
+{
+  display:block;
+}
+ol 
+{
+  list-style-type:none;
+}
+
+ol ul
+{
+  display:none;
+  margin:0;
+  padding:0;
+}
+
+li  
+{
+  width:300px;
+  height:50px;
+  background-color:pink;
+  cursor:default;
+}
+
+li:hover, li a:hover
+{
+  background-color:blue;  
+}
+
+ol > li:hover > ul
+{
+  display:block;
+  list-style-type:none;
+  margin-top:-51px;
+}
+
+ul li  
+{
+  margin-left:300px;
+}

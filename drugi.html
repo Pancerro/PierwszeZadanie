@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Pierwsze zadanie </title>
+		<meta name="keywords" content="strona,zadania,ktos_mi_kazal" />
+		<meta name="description" content="Zadanie ze studiow" /> 
+		<meta name="author" content="Adrian Ławecki" />
+		<link rel="stylesheet" href="style/style.css" type="text/css" />
+	</head>
+	<script type="text/javascript">
+	var my_div = null;
+	var newDiv = null;
+	window.onload=addElement;
+	function addElement()
+		{
+			newDiv = document.createElement("div");
+			newDiv.innerHTML = "<h1>UDALO SIE, COS DZIALA</h1>";
+			newDiv.classList.add('klasa');
+			newDiv.style.color = 'yellow';
+			newDiv.style.background='black';
+			my_div = document.getElementById("org_div1");
+			document.body.insertBefore(newDiv, my_div);
+			document.appendChild(newDiv);
+		}
+
+		</script>
+	<body>
+		<div id='org_div1'> </div>
+		<div class="pojemnik">
+			<header>
+			<img src="img/1.jpg" alt="logo" width="75" height="75"/>
+			<h1 id="naglowek"> Dzien Dobry! </h1>
+			<nav>
+			<h2>Menu nawigacyjne</h2>
+			</nav>
+			</header>
+			<main>
+			<h3>głowne cialo strony</h3>
+			<section>
+			<article>
+			<h3><cite>Artykul</cite></h3>
+			<div class="display_block" style="background-color:black;">
+			<p>W tym akapicie jest link do index.html </br> <a href="index.html">Kliknij by przejsc do strony glownej</a></p>
+			</div>
+			<div class="display_block" style="background-color:red;">
+			<blockquote><em><q>Nie sądzę, byś kiedykolwiek<span style="color:green;"> powinien wstydzić się</span> czy obawiać tego kim
+			jesteś, ani tego co dzieje się w twoim życiu. Życie jest dobre. Człowieku,
+			możesz czuć się jak ofiara cały czas, lub podnieść swój tyłek i zrobić to,
+			co chcesz zrobić</q></em></blockquote>
+			<div>
+			<hr/>
+			</article>
+			<iframe src="https://www.onet.pl/">Twoja przeglądarka nie akceptuje pływających ramek!</iframe>
+			</section>
+			<table id="tabela">
+				<tr>
+					<td><img src="img/3.jpg" alt="logo" width="150" height="150"/></td>
+					<td>Robienie zwyklej tabeli</td>
+				</tr>
+				<tr>
+					<td><img src="img/2.jpg" alt="logo" width="150" height="150"/></td>
+					<td>Robienie tabeli z memem</td>
+				</tr>
+			</table>
+			</main>
+			<aside>
+			<h4><b>Menu boczne</b></h4>
+			 <ol>
+				<li>
+				Opcja 1
+					<ul>
+						<li><a href="#link_1_2">Opcja_1_1</a></li>
+						<li><a href="#link_1_2">Opcja_1_2</a></li>
+						<li><a href="#link_1_3">Opcja_1_3</a></li>
+						<li><a href="#link_1_4">Opcja_1_4</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#link_2">Opcja 2</a>
+				</li>
+				<li>
+				Opcja 3
+					<ul>
+						<li><a href="#link_3_1">Opcja_3_1</a></li>
+						<li><a href="#link_3_2">Opcja_3_2</a></li>
+						<li><a href="#link_3_3">Opcja_3_3</a></li>
+					</ul>
+				</li>
+				<li>
+				Opcja 4
+					<ul>
+						<li><a href="#link_4_1">Opcja_4_1</a></li>
+						<li><a href="#link_4_2">Opcja_4_2</a></li>
+					</ul>
+				</li>
+			</ol>
+			</aside>
+			<footer>
+			<h5><small>stopka</small></h5>
+			</footer>
+		</div>
+	</body>
+</html>
