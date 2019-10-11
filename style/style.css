@@ -27,7 +27,7 @@ main {  /* Tresc strony */
 	background-color: blue;
     width: 75%;
 	height:calc(100vh - 180px);
-    float: right;
+    float: left;
 	overflow:hidden;
 }
 section {
@@ -82,8 +82,9 @@ blockquote{
 }
 iframe{
 	float:right;
-	width:800px;
+	width:60%;
 	height:500px;
+	overflow:hidden;
 }
 #tabela {
 	margin: auto;
