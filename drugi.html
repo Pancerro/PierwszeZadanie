@@ -8,31 +8,43 @@
 		<meta name="author" content="Adrian Ławecki" />
 		<link rel="stylesheet" href="style/style.css" type="text/css" />
 	</head>
-	<script type="text/javascript">
-	var my_div = null;
-	var newDiv = null;
-	window.onload=addElement;
-	function addElement()
-		{
-			newDiv = document.createElement("div");
-			newDiv.innerHTML = "<h1>UDALO SIE, COS DZIALA</h1>";
-			newDiv.classList.add('klasa');
-			newDiv.style.color = 'yellow';
-			newDiv.style.background='black';
-			my_div = document.getElementById("org_div1");
-			document.body.insertBefore(newDiv, my_div);
-			document.appendChild(newDiv);
-		}
-
-		</script>
+	<script type="text/javascript" src="skrypty/skrypt.js"></script>
 	<body>
-		<div id='org_div1'> </div>
 		<div class="pojemnik">
 			<header>
-			<img src="img/1.jpg" alt="logo" width="75" height="75"/>
-			<h1 id="naglowek"> Dzien Dobry! </h1>
+			<a href="index.html"><img src="img/1.jpg" alt="logo" width="75" height="75"></a>
 			<nav>
+			<h1 id="naglowek"> Dzien Dobry! </h1>
 			<h2>Menu nawigacyjne</h2>
+				 <ol>
+				<li>
+				Opcja 1
+					<ul>
+						<li><a href="#link_1_2">Kto </a></li>
+						<li><a href="#link_1_2">lubi</a></li>
+						<li><a href="#link_1_3">pancernki?</a></li>
+						<li><a href="#link_1_4">Ja!</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#link_2">Opcja 2</a>
+				</li>
+				<li>
+				Opcja 3
+					<ul>
+						<li><a href="#link_3_1">Ale</a></li>
+						<li><a href="#link_3_2">czy</a></li>
+						<li><a href="#link_3_3">napewno?</a></li>
+					</ul>
+				</li>
+				<li>
+				Opcja 4
+					<ul>
+						<li><a href="#link_4_1">No</a></li>
+						<li><a href="#link_4_2">nie wiem...</a></li>
+					</ul>
+				</li>
+			</ol>
 			</nav>
 			</header>
 			<main>
@@ -60,41 +72,17 @@
 				</tr>
 				<tr>
 					<td><img src="img/2.jpg" alt="logo" width="150" height="150"/></td>
-					<td>Robienie tabeli z memem</td>
+					<td>Robienie dziwnej tabeli z memem</td>
 				</tr>
 			</table>
 			</main>
 			<aside>
 			<h4><b>Menu boczne</b></h4>
-			 <ol>
-				<li>
-				Opcja 1
-					<ul>
-						<li><a href="#link_1_2">Opcja_1_1</a></li>
-						<li><a href="#link_1_2">Opcja_1_2</a></li>
-						<li><a href="#link_1_3">Opcja_1_3</a></li>
-						<li><a href="#link_1_4">Opcja_1_4</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#link_2">Opcja 2</a>
-				</li>
-				<li>
-				Opcja 3
-					<ul>
-						<li><a href="#link_3_1">Opcja_3_1</a></li>
-						<li><a href="#link_3_2">Opcja_3_2</a></li>
-						<li><a href="#link_3_3">Opcja_3_3</a></li>
-					</ul>
-				</li>
-				<li>
-				Opcja 4
-					<ul>
-						<li><a href="#link_4_1">Opcja_4_1</a></li>
-						<li><a href="#link_4_2">Opcja_4_2</a></li>
-					</ul>
-				</li>
-			</ol>
+			<p>Kliknij w przycisk a zadziala sie magia </p>
+			<div id="myDIV">
+				<p> Element z Divem </p>
+			</div>
+			<p><button onclick="myFunction()">Kliknij tu</button></p>
 			</aside>
 			<footer>
 			<h5><small>stopka</small></h5>

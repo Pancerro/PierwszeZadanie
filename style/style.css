@@ -1,7 +1,7 @@
 body
 {
-  margin:0;
-  padding:0;
+	margin:0;
+	padding:0;
 }
 div.pojemnik
 {
@@ -14,14 +14,14 @@ header {  /* Naglowek */
 }
 nav {  /* Menu nawigacyjne */
 	background-color: pink;
-	height: 50px;
+	overflow:auto;
 }
 aside { /* Menu boczne */
 	background-color: orange;
     width: 25%;
 	height:calc(100vh - 180px);
     float: left;
-	overflow:hidden;
+	overflow:auto;
 }
 main {  /* Tresc strony */
 	background-color: blue;
@@ -40,42 +40,44 @@ footer {  /* stopka */
 	background-color: green;
 	clear:both;
 }
-h1{
-  margin:0;
-  padding:15px;
+h1,h2,h3,h4,h5{
+	margin:0;
+	padding:15px;
 }
 h2{
-  margin:0;
-  padding:15px;
-}
-h3{
-  margin:0;
-  padding:15px;
-}
-h4{
-  margin:0;
-  padding:15px;
-}
-h5{
-  margin:0;
-  padding:15px;
+	padding-bottom:0px;
 }
 p{
-  margin:0;
-  padding:15px;
-  color:white;
-  font-family: "Times New Roman", Times, serif;
-  text-align:center;
-  letter-spacing:5px;
+	margin:0;
+	padding:15px;
+	color:blue;
+	font-family: "Times New Roman", Times, serif;
+	text-align:center;
+	letter-spacing:5px;
 }
 a{
 	color:white;
 }
 a:visited {
-  color: green;
+	color: green;
 }
 a:hover {
-  color: red;
+	color: red;
+}
+button {
+	background-color: #4CAF50; 
+	border: 5px solid;
+	color: white;
+	font-size: 1.5em;
+}
+button:hover{
+	color:red;
+}
+#myDIV{
+	border:10px solid;
+	border-color:black;
+	margin:10px;
+	margin-top:-10px;
 }
 blockquote{
 	font-style: italic;
@@ -84,61 +86,62 @@ iframe{
 	float:right;
 	width:60%;
 	height:500px;
-	overflow:hidden;
+	margin:15px;
 }
 #tabela {
 	margin: auto;
-	border: 1cm solid black;
+	border-radius:100px;
     border-collapse: collapse;
 	background-color:gray;
+	overflow:hidden;
+	margin-top:22px;
 }
 #tabela td {
-	border: 1px solid black;
+	border: 10px solid yellow;
+	padding:10px;
 }
 #naglowek {
 	float:right;
 }
 .display_block
 {
-  color:white;
+	color:white;
 }
 .display_block 
 {
-  display:block;
+	display:block;
 }
 ol 
 {
-  list-style-type:none;
+	list-style-type:none;
+	position: relative;
+	left: -30px;
+	top:-10px;
 }
-
 ol ul
 {
-  display:none;
-  margin:0;
-  padding:0;
+	display:none;
+	margin:0;
+	padding:0;
 }
-
 li  
 {
-  width:300px;
-  height:50px;
-  background-color:pink;
-  cursor:default;
+	width:150px;
+	background-color:gray;
+	border-top:1px solid black;
+	border-left:1px solid black;
 }
-
-li:hover, li a:hover
+li:hover
 {
-  background-color:blue;  
+	background-color:gray; 
 }
-
+ol li  
+{
+	float:left;
+}
 ol > li:hover > ul
 {
-  display:block;
-  list-style-type:none;
-  margin-top:-51px;
+	display:block;
+	list-style-type:none;
 }
 
-ul li  
-{
-  margin-left:300px;
-}
